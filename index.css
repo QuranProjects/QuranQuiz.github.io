@@ -1,0 +1,19 @@
+body{
+    background-color: antiquewhite;
+}
+
+#verse1 {
+    color:green
+}
+
+#chooseSurahs {
+    visibility: visible;
+}
+
+#quizMain {
+    visibility: hidden;
+}
+
+#finalScore {
+    visibility: hidden;
+}

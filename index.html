@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Quran Quiz</title>
+    <script src="index.js" defer></script>
+</head>
+<body onLoad='window.scrollTo(0, 0)' align="center">
+    <div id="chooseSurahs">
+        <h1>حدد مقدار حفظك</h1>
+        <select id="surahSelector1"></select>
+        <select id="surahSelector2"></select>
+        <br><br>
+        <h1>طبعة المصحف</h1>
+        <select id="mushafType">
+            <option value="طبعة الملك فهد">طبعة الملك فهد</option>
+            <option value="طبعة الملك عبدالله">طبعة الملك عبدالله</option>
+        </select>
+        <br><br>
+        <button id="confirmSurahs">تأكيد</button>
+    </div>
+    <div id="quizMain">
+        <h1 id="verse1"></h1>
+        <h1 id="verse2"></h1>
+        <br>
+        <h1>اكمل ما يلي عن الاية الملونة بلأخضر</h1>
+        <input type="number" id="pageNumber"><label for="pageNumber"> : رقم الصفحة</label>
+        <br><br>
+        <input type="number" id="juzNumber"><label for="juzNumber"> : رقم الجزء</label>
+        <br><br>
+        <input type="number" id="hizbNumber"><label for="hizbNumber"> : رقم الحزب</label>
+        <br><br>
+        <input type="number" id="surahNumber"><label for="surahNumber"> : رقم السورة</label>
+        <br><br>
+        <input type="number" id="ayahNumber"><label for="ayahNumber"> : رقم الآية</label>
+        <br><br>
+        <select id="surahNameQuiz"></select><label for="surahNameQuiz"> : اسم السورة</label>
+        <br><br><button id="submitButton">تأكد</button>
+    </div>
+    <div id="finalScore">
+        <h1 id="totalScore"></h1>
+        <br><h1 id="correctPageNumber"></h1>
+        <br><h1 id="correctJuzNumber"></h1>
+        <br><h1 id="correctHizbNumber"></h1>
+        <br><h1 id="correctSurahNumber"></h1>
+        <br><h1 id="correctAyahNumber"></h1>
+        <br><h1 id="correctSurahName"></h1>
+        <br><button id="repeatSameSurahs">اعد بدون تغيير مقدار الحفظ</button>       <button id="repeatDifferentSurahs">غير مقدار الحفظ</button>
+    </div>
+</body>
+</html>
